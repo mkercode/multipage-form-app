@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/description">
+
+    <fragment
+        android:id="@+id/description"
+        android:name="com.loopbreakr.viewmodelform.Description"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_description_to_pageOne"
+            app:destination="@id/pageOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageOne"
+        android:name="com.loopbreakr.viewmodelform.PageOne"
+        android:label="fragment_page_one"
+        tools:layout="@layout/fragment_page_one" >
+        <action
+            android:id="@+id/action_pageOne_to_pageTwo"
+            app:destination="@id/pageTwo" />
+        <action
+            android:id="@+id/action_pageOne_to_description"
+            app:destination="@id/description" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageTwo"
+        android:name="com.loopbreakr.viewmodelform.PageTwo"
+        android:label="fragment_page_two"
+        tools:layout="@layout/fragment_page_two" >
+        <action
+            android:id="@+id/action_pageTwo_to_pageThree"
+            app:destination="@id/pageThree" />
+        <action
+            android:id="@+id/action_pageTwo_to_pageOne"
+            app:destination="@id/pageOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageThree"
+        android:name="com.loopbreakr.viewmodelform.PageThree"
+        android:label="fragment_page_three"
+        tools:layout="@layout/fragment_page_three" >
+        <action
+            android:id="@+id/action_pageThree_to_pageTwo"
+            app:destination="@id/pageTwo" />
+    </fragment>
+</navigation>

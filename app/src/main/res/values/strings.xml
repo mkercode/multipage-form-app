@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ViewModelForm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="questionOneText">First Question Text?</string>
+    <string name="next">Next</string>
+    <string name="returnText">Return</string>
+    <string name="type_here">Type here...</string>
+    <string name="questionTwoText">Question Two Text?</string>
+    <string name="begin">Begin</string>
+    <string name="activity_title">Activity Title</string>
+    <string name="description">A description for your activity/form</string>
+</resources>
